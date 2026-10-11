@@ -99,6 +99,130 @@
         { text: "Gebbia가 Chesky에게 보낸 이메일(2007년 9월 22일)", why: "Brad Stone의 책(The Upstarts)으로만 확인되고 큰 언론 기사는 열어 보지 못해서 뺌" },
         { text: "인도에서 온 손님(Amol Surve)이 묵은 밤 수", why: "한 곳에서만 확인돼서 뺌" }
       ]
+    },
+    {
+      id: "brian-chesky-2",
+      no: 2,
+      title: { en: "Selling Cereal to Stay Alive", ko: "시리얼을 팔아 버티기" },
+      script: [
+        [
+          "By the summer of 2008, Brian and Joe were still trying to turn their idea into a real business.",
+          "And they weren't just two anymore.",
+          "A third partner had joined them.",
+          "His name was Nathan Blecharczyk.",
+          "Nathan was an engineer, and he was the one who built the website."
+        ],
+        [
+          "In August 2008, they launched a new version of their website, just before the Democratic National Convention came to Denver.",
+          "It was a huge political event, and it brought them some attention.",
+          "But after the conventions were over, things got hard again.",
+          "Not enough people were booking.",
+          "The money wasn't coming in.",
+          "And the founders were deep in credit card debt."
+        ],
+        [
+          "So they came up with a strange plan.",
+          "It was an election year, and the whole country was talking about two men: Barack Obama and John McCain.",
+          "Why not sell breakfast cereal about them?",
+          "They created two cereals.",
+          "One was called Obama O's.",
+          "The other was called Cap'n McCain's."
+        ],
+        [
+          "They bought ordinary cereal and put it into boxes they had designed themselves.",
+          "The boxes didn't come ready to use, either.",
+          "They were printed on flat sheets of poster board.",
+          "So the founders folded every single one by hand and stuck it together with a hot glue gun, right in their apartment.",
+          "They made about a thousand boxes."
+        ],
+        [
+          "Then they sold them as limited-edition collector's items, for forty dollars a box.",
+          "That's a lot of money for cereal.",
+          "But people actually bought them.",
+          "The money helped them pay off a lot of their debt and keep the company going a little longer."
+        ],
+        [
+          "Around that time, a mentor named Michael Seibel recommended them to Y Combinator, a program that gives money and advice to young startups.",
+          "So the three founders went to pitch their idea to Paul Graham, the man who ran it.",
+          "At first, Paul wasn't so sure.",
+          "Would people really want to stay in a stranger's home?",
+          "Then he heard the story of the cereal, and that changed his mind.",
+          "He reportedly told them something like this: if you can convince people to pay forty dollars for four-dollar boxes of cereal, maybe, just maybe, you can convince strangers to live with each other."
+        ],
+        [
+          "Soon after, they got in.",
+          "In January 2009, the three founders joined Y Combinator's winter program.",
+          "Y Combinator gave them twenty thousand dollars, and in return, it got six percent of the company.",
+          "It wasn't a lot of money.",
+          "But for three founders who had been gluing cereal boxes together in their apartment, it was a real second chance."
+        ]
+      ],
+      questions: [
+        { id: "q1", type: "main", en: "Why did the founders start selling cereal?", ko: "창업자들은 왜 시리얼을 팔기 시작했나요?",
+          answer: "Not enough people were booking, the money wasn't coming in, and they were deep in credit card debt. They needed money to keep the company going." },
+        { id: "q2", type: "verb", en: "What did Nathan Blecharczyk do for the company?", ko: "네이선 블레차르지크는 회사를 위해 무엇을 했나요?",
+          answer: "He joined Brian and Joe as a third partner, and as an engineer, he built the website." },
+        { id: "q3", type: "why", en: "Why did Paul Graham change his mind about the founders?", ko: "폴 그레이엄은 왜 창업자들에 대한 생각을 바꿨나요?",
+          answer: "He heard the cereal story. He thought that if they could get people to pay forty dollars for a four-dollar box of cereal, maybe they could get strangers to live with each other." },
+        { id: "q4", type: "verb", en: "What did the founders do with the printed boxes?", ko: "창업자들은 인쇄된 상자로 무엇을 했나요?",
+          answer: "They folded every one by hand, stuck it together with a hot glue gun in their apartment, filled it with ordinary cereal, and sold it for forty dollars a box." },
+        { id: "q5", type: "detail", en: "When did the founders join Y Combinator, and what did they get?", ko: "창업자들은 언제 Y Combinator에 들어갔고, 무엇을 받았나요?",
+          answer: "In January 2009. Y Combinator gave them twenty thousand dollars, and in return it got six percent of the company." }
+      ],
+      facts: [
+        { id: "f1", text: "Nathan Blecharczyk joined in 2008 as the third co-founder.", sources: ["s1", "s4"] },
+        { id: "f2", text: "Blecharczyk was the engineer who built the website.", sources: ["s2", "s6", "s4"] },
+        { id: "f3", text: "In August 2008 (August 11) the site was (re)launched, just before the Democratic National Convention in Denver.", sources: ["s1", "s8", "s2", "s11"] },
+        { id: "f4", text: "The convention brought them attention and demand.", sources: ["s2", "s7"] },
+        { id: "f5", text: "After the conventions they struggled again — not enough bookings, not enough money.", sources: ["s7", "s8", "s11"] },
+        { id: "f6", text: "The founders were deep in credit card debt.", sources: ["s8", "s9", "s5"] },
+        { id: "f7", text: "They made two cereals themed on the 2008 presidential candidates Barack Obama and John McCain: Obama O's and Cap'n McCain's.", sources: ["s1", "s4", "s5", "s10"] },
+        { id: "f8", text: "They bought ordinary store cereal and repackaged it in boxes they designed themselves.", sources: ["s2", "s10", "s9"] },
+        { id: "f9", text: "The boxes came as printed poster board; the founders folded and hot-glued them by hand in their apartment.", sources: ["s8", "s12"] },
+        { id: "f10", text: "They made about 1,000 boxes (500 of each).", sources: ["s10", "s2"] },
+        { id: "f11", text: "They sold the boxes as limited-edition collector's items for $40 a box.", sources: ["s5", "s6", "s7", "s9", "s12"] },
+        { id: "f12", text: "The money helped them pay off much of their debt and keep the company going.", sources: ["s2", "s9", "s6"] },
+        { id: "f13", text: "Michael Seibel, a mentor, recommended them to Y Combinator.", sources: ["s3", "s9"] },
+        { id: "f14", text: "Y Combinator, run by Paul Graham, gives young startups money and advice; the founders pitched to Graham.", sources: ["s1", "s5", "s7", "s9"] },
+        { id: "f15", text: "Graham doubted the idea at first (would people stay with strangers?) and changed his mind after hearing the cereal story.", sources: ["s7", "s12"] },
+        { id: "f16", text: "Graham's reported words: if you can convince people to pay $40 for $4 boxes of cereal, maybe you can convince strangers to live with each other.", sources: ["s7", "s13", "s9"] },
+        { id: "f17", text: "In January 2009 the three founders joined Y Combinator's winter batch.", sources: ["s1", "s4", "s5", "s6"] },
+        { id: "f18", text: "Y Combinator gave them $20,000 in exchange for 6% of the company.", sources: ["s1", "s2", "s5", "s7", "s9"] }
+      ],
+      sources: [
+        { id: "s1", type: "wikipedia", publisher: "Wikipedia", title: "Airbnb", url: "https://en.wikipedia.org/wiki/Airbnb", accessed: "2026-10-11" },
+        { id: "s2", type: "wikipedia", publisher: "Wikipedia", title: "Brian Chesky", url: "https://en.wikipedia.org/wiki/Brian_Chesky", accessed: "2026-10-11" },
+        { id: "s3", type: "wikipedia", publisher: "Wikipedia", title: "Michael Seibel", url: "https://en.wikipedia.org/wiki/Michael_Seibel", accessed: "2026-10-11" },
+        { id: "s4", type: "grokipedia", publisher: "Grokipedia", title: "Airbnb", url: "https://grokipedia.com/page/Airbnb", accessed: "2026-10-11" },
+        { id: "s5", type: "grokipedia", publisher: "Grokipedia", title: "Brian Chesky", url: "https://grokipedia.com/page/Brian_Chesky", accessed: "2026-10-11" },
+        { id: "s6", type: "grokipedia", publisher: "Grokipedia", title: "Joe Gebbia", url: "https://grokipedia.com/page/Joe_Gebbia", accessed: "2026-10-11" },
+        { id: "s7", type: "press", publisher: "Fortune", title: "Airbnb's CEO says a $40 cereal box changed the course of the multibillion-dollar company", url: "https://fortune.com/2023/04/19/airbnb-ceo-cereal-box-investors-changed-everything-billion-dollar-company/", accessed: "2026-10-11" },
+        { id: "s8", type: "press", publisher: "CNBC", title: "In 2009, Airbnb collected $734 in fees in a week, and was clawing toward 'ramen profitability'", url: "https://www.nbcsandiego.com/news/business/money-report/in-2009-airbnb-collected-734-in-fees-in-a-week-and-was-clawing-toward-ramen-profitability/2447353/", accessed: "2026-10-11",
+          note: "CNBC 기사(Catherine Clifford, 2020-11-19)를 NBC San Diego에 같이 실린 글로 읽음" },
+        { id: "s9", type: "press", publisher: "Crunchbase News", title: "Airbnb's IPO is a big deal for the company. It's big for Y Combinator, too.", url: "https://news.crunchbase.com/venture/airbnb-ipo-origin-story-y-combinator/", accessed: "2026-10-11" },
+        { id: "s10", type: "press", publisher: "TechCrunch", title: "What's for breakfast at your house: Obama O's or Cap'n McCain's?", url: "https://techcrunch.com/2008/10/09/whats-for-breakfast-at-your-house-obama-os-or-capn-mccains/", accessed: "2026-10-11" },
+        { id: "s11", type: "press", publisher: "TechCrunch", title: "How Airbnb went from renting air beds for $10 to a $30 billion hospitality behemoth", url: "https://techcrunch.com/2018/08/12/how-airbnb-went-from-renting-air-beds-for-10-to-a-30-billion-hospitality-behemoth/", accessed: "2026-10-11" },
+        { id: "s12", type: "press", publisher: "Mail & Guardian", title: "Brian Chesky: The homeless entrepreneur", url: "https://mg.co.za/article/2013-03-12-brian-chesky-the-homeless-entrepreneur/", accessed: "2026-10-11" },
+        { id: "s13", type: "press", publisher: "CNBC", title: "Airbnb CEO says his $75 billion company was rejected by investors—until a $40 box of cereal turned things around", url: "https://www.cnbc.com/2023/04/18/airbnb-ceo-says-he-wooed-first-investors-with-boxes-of-cereal.html", accessed: "2026-10-11",
+          note: "이 PC에서 페이지가 열리지 않아(403) 검색 결과에 나온 기사 내용으로 확인" }
+      ],
+      dropped: [
+        { text: "한 상자 가격 39달러", why: "TechCrunch(2008년 당시 기사)는 39달러, 나머지 글은 모두 40달러 — 사용자 결정(2026-10-11)으로 40달러로 씀" },
+        { text: "시리얼로 번 돈", why: "Wikipedia(Airbnb)·Fortune 등은 3만 달러, Wikipedia(Brian Chesky)는 2만~3만 달러, CNBC는 4만 달러 — 서로 달라서 뺌" },
+        { text: "팔린 상자 수", why: "CNBC는 1,000개, Grokipedia는 1,000개 넘게, NPR 인터뷰 요약은 약 800개 — 만든 수(약 1,000개)만 씀" },
+        { text: "신용카드 빚 금액", why: "CNBC(Chesky 본인 말)는 2만 5천 달러, Wikipedia는 2만 달러, Grokipedia는 4만 달러 넘음 — 서로 달라서 뺌" },
+        { text: "시리얼을 어디서 팔았는지", why: "Wikipedia(Airbnb)는 '주로 민주당 전당대회에서', TechCrunch(2008년 10월)는 전당대회 뒤 웹사이트 주문 — 서로 달라서 뺌" },
+        { text: "전당대회 때 숙소·예약 수, 덴버 호텔 방 수", why: "Wikipedia는 숙소 800개·예약 80건, TechCrunch는 600명 넘게 묵음 — 서로 다름. 호텔 방 수(방문객 8만 대 방 2만 8천)는 Grokipedia에만 있어서 뺌" },
+        { text: "상자 안에 든 시리얼 종류", why: "TechCrunch는 Honey O's·Quaker Puffs, 다른 글은 Cheerios·Cap'n Crunch — 서로 달라서 'ordinary cereal'로만 씀" },
+        { text: "상자 문구('Breakfast of Change', 'Hope in every bowl', 'A maverick in every bite')", why: "TechCrunch에서만 확인(마지막 문구는 큰 언론에서 확인 못 함) — 뺌" },
+        { text: "투자자들에게 여러 번 거절당한 일", why: "Fortune만 직접 열어 확인, CNBC(2023)는 검색 결과로만 봄 — 사용자 결정(2026-10-11)으로 뺌" },
+        { text: "Joe가 Obama O's 상자를 꺼내 Paul Graham에게 보여 준 일", why: "Joe라는 이름은 Inc.·Fortune 검색 결과로만 봄 — 사용자 결정(2026-10-11)으로 뺌, 'heard the story of the cereal'로만 씀" },
+        { text: "Y Combinator 프로그램 기간(3개월)", why: "Fortune만 직접 확인, CNBC(2023)는 검색 결과로만 봄 — 사용자 결정(2026-10-11)으로 뺌" },
+        { text: "Paul Graham의 'cockroaches(바퀴벌레)' 말", why: "큰 언론 중 Mail & Guardian에서만 확인돼서 뺌" },
+        { text: "신용카드를 야구 카드 바인더에 꽂아 둔 이야기", why: "CNBC에서만 확인돼서 뺌" },
+        { text: "Y Combinator 지원 마감을 놓친 일·Paul Graham의 10월 28일 메일", why: "블로그 글로만 확인돼서 뺌" },
+        { text: "Airbnb로 이름을 줄인 때, Sequoia 투자 금액", why: "이름: Wikipedia(Airbnb)는 2009년 3월, Wikipedia(Brian Chesky)는 Sequoia 투자 뒤 / 금액: 58만 5천 달러 대 60만 달러 — 서로 달라서 뺌(다음 챕터 주제)" }
+      ]
     }
   ]
 };
