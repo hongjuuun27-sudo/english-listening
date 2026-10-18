@@ -34,6 +34,7 @@
    - `/workspace/pwenv/bin/python -I /workspace/tools/listen-audio-build.py --chapter <챕터 id>` — 확인만(글자 수 = 크레딧 기준, 지문, 파일 이름)
    - `... --go` — 딱 한 번 생성. 이미 manifest·mp3·저장된 응답이 있으면 거부. 응답 원본은 `/workspace/tools/listen-audio-work/`에 먼저 저장(뒤처리 실패 시 `--from-saved`로 API 없이 다시)
    - 점검: `listen-checks/audio_check.py <저장소> <응답 json> <챕터 id> [이름,들]`(타이밍·문장 시작·문장 잘라 듣기·노래방 실제 재생·이름 발음 정렬), `audio_baseline.py`(같은 측정을 1챕터 배포본과 나란히)
+     - 주의: `audio_check.py`의 '앱이 미리 만든 음성을 씀' 항목은 2챕터 개수(422/37)가 박혀 있어 다른 챕터에선 그 줄이 틀림 · 이름 점검은 그 이름이 스크립트에 없으면 실패함
 
 ## 음성 형식 (앱 `index.html`과 맞춤)
 - 목소리 Matt `pwMBn0SsmN1220Aorv15`, 모델 `eleven_v4`, `mp3_44100_128`, stability 0.5 · similarity_boost 0.75, `/with-timestamps`
@@ -48,11 +49,12 @@
 - 이 키에는 잔액을 읽는 권한(`user_read`)이 없어 생성 전후 잔액 비교가 안 됨 → 응답 헤더 `character-cost`를 기록하고, 정확한 차감은 ElevenLabs 웹사이트에서 확인
 - 2026-10-09 1챕터: 1,887자, 응답 값 228, 생성 후 남은 크레딧 136,652(그때 기록 — 실제 차감량은 모름)
 - 2026-10-11 2챕터: 2,377자, `character-cost` 288 (1챕터와 같은 비율 약 0.12/자)
+- 2026-10-18 3·4·5챕터: 2,327·2,206·2,325자, `character-cost` 1024·971·1023 (약 0.44/자 — 1·2챕터 0.12/자보다 훨씬 높음, 웹사이트에서 실제 차감 확인 필요)
 
 ## 현재 상태
 - Brian Chesky(5챕터 계획, 5챕터 모두 데이터 있음):
   - 1챕터 "Air Mattresses and Breakfast"(2007, 에어매트리스·첫 손님 3명) · 2챕터 "Selling Cereal to Stay Alive"(2008~2009, Nathan 합류·Obama O's/Cap'n McCain's·Y Combinator) — 둘 다 음성 있음
-  - 3챕터 "A New Name and a Life Without a Home"(2009~2011, Airbnb로 이름 줄임·Sequoia 투자·뉴욕 호스트 방문·Chesky가 숙소에서 살기·100만 박) — 430단어, 2,327자, **음성 아직 없음**
-  - 4챕터 "When Trust Was Broken"(2011~2012, EJ 집 사건·Chesky 사과·Host Guarantee 5만 달러 → 100만 달러) — 394단어, 2,206자, **음성 아직 없음**
-  - 5챕터 "From Crisis to the Stock Market"(2020, 코로나·약 1,900명 해고 편지·가까운 곳 여행·12월 10일 상장) — 418단어, 2,325자, **음성 아직 없음**
+  - 3챕터 "A New Name and a Life Without a Home"(2009~2011, Airbnb로 이름 줄임·Sequoia 투자·뉴욕 호스트 방문·Chesky가 숙소에서 살기·100만 박) — 430단어, 2,327자, 음성 있음(2026-10-18 생성)
+  - 4챕터 "When Trust Was Broken"(2011~2012, EJ 집 사건·Chesky 사과·Host Guarantee 5만 달러 → 100만 달러) — 394단어, 2,206자, 음성 있음(2026-10-18 생성)
+  - 5챕터 "From Crisis to the Stock Market"(2020, 코로나·약 1,900명 해고 편지·가까운 곳 여행·12월 10일 상장) — 418단어, 2,325자, 음성 있음(2026-10-18 생성)
   - 3~5챕터 검사: `data_check.js`(2챕터부터 모든 챕터를 앞 챕터들과 비교하도록 넓힘, 옛 2챕터판은 `data_check.ch2-orig.js`) · `app_check_ch345.py`(음성 전 = 키 없음 device / 키 있음 gen·크레딧 안내, 음성 뒤 = ready·manifest 대조). 옛 `app_check.py`는 3~5가 '준비 중'이라고 기대하므로 이제 그 항목은 실패함
