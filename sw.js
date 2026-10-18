@@ -4,8 +4,8 @@
    - 같은 github.io 주소를 쓰는 한 장 영어·영어일기와 Cache Storage를 같이 쓰므로, **지울 때는 bizlisten- 로 시작하는 옛 저장소만** 지움.
    - 챕터 음성(audio/*.mp3)은 여기 저장하지 않음 — 앱이 IndexedDB bizlisten-tts에 둠(한 장 영어 sw.js가 다른 앱 캐시를 지워도 남게).
    - ElevenLabs 같은 다른 사이트 요청, GET이 아닌 요청은 건드리지 않음. */
-const CACHE = "bizlisten-v2";
-const CORE = ["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./icon-maskable-512.png", "./data/people.js"];
+const CACHE = "bizlisten-v3";
+const CORE = ["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./icon-maskable-512.png", "./data/people.js", "./data/people/brian-chesky.js"];
 
 self.addEventListener("install", e => {
   e.waitUntil(caches.open(CACHE).then(c => c.addAll(CORE.map(u => new Request(u, { cache: "reload" })))).then(() => self.skipWaiting()));

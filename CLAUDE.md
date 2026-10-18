@@ -50,5 +50,9 @@
 - 2026-10-11 2챕터: 2,377자, `character-cost` 288 (1챕터와 같은 비율 약 0.12/자)
 
 ## 현재 상태
-- Brian Chesky(5챕터 계획): 1챕터 "Air Mattresses and Breakfast"(2007, 에어매트리스·첫 손님 3명) · 2챕터 "Selling Cereal to Stay Alive"(2008~2009, Nathan 합류·Obama O's/Cap'n McCain's·Y Combinator) — 둘 다 음성 있음
-- 3챕터 후보로 미뤄 둔 것: Airbnb로 이름 바꾼 때, Sequoia 투자(출처끼리 숫자가 달라 2챕터 dropped에 기록)
+- Brian Chesky(5챕터 계획, 5챕터 모두 데이터 있음):
+  - 1챕터 "Air Mattresses and Breakfast"(2007, 에어매트리스·첫 손님 3명) · 2챕터 "Selling Cereal to Stay Alive"(2008~2009, Nathan 합류·Obama O's/Cap'n McCain's·Y Combinator) — 둘 다 음성 있음
+  - 3챕터 "A New Name and a Life Without a Home"(2009~2011, Airbnb로 이름 줄임·Sequoia 투자·뉴욕 호스트 방문·Chesky가 숙소에서 살기·100만 박) — 430단어, 2,327자, **음성 아직 없음**
+  - 4챕터 "When Trust Was Broken"(2011~2012, EJ 집 사건·Chesky 사과·Host Guarantee 5만 달러 → 100만 달러) — 394단어, 2,206자, **음성 아직 없음**
+  - 5챕터 "From Crisis to the Stock Market"(2020, 코로나·약 1,900명 해고 편지·가까운 곳 여행·12월 10일 상장) — 418단어, 2,325자, **음성 아직 없음**
+  - 3~5챕터 검사: `data_check.js`(2챕터부터 모든 챕터를 앞 챕터들과 비교하도록 넓힘, 옛 2챕터판은 `data_check.ch2-orig.js`) · `app_check_ch345.py`(음성 전 = 키 없음 device / 키 있음 gen·크레딧 안내, 음성 뒤 = ready·manifest 대조). 옛 `app_check.py`는 3~5가 '준비 중'이라고 기대하므로 이제 그 항목은 실패함
